@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ServiceNow</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>Index1</servlet-name>
+  	<servlet-class>com.aswin.controller.Index1</servlet-class>
+	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <session-config>
+        <session-timeout>1</session-timeout>
+  </session-config>
+  <servlet>
+  	<servlet-name>Index</servlet-name>
+  	<servlet-class>com.aswin.controller.Index</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Index</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServiceNow</servlet-name>
+  	<servlet-class>com.aswin.controller.ServiceNow</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceNow</servlet-name>
+  	<url-pattern>/servicenow</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServiceNowSys</servlet-name>
+  	<servlet-class>com.aswin.controller.ServiceNowSys</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceNowSys</servlet-name>
+  	<url-pattern>/servicenowsys</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServiceNowCreate</servlet-name>
+  	<servlet-class>com.aswin.controller.ServiceNowCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceNowCreate</servlet-name>
+  	<url-pattern>/servicenowcreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServiceNowUpdate</servlet-name>
+  	<servlet-class>com.aswin.controller.ServiceNowUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServiceNowUpdate</servlet-name>
+  	<url-pattern>/servicenowupdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CopyData</servlet-name>
+  	<servlet-class>com.aswin.controller.CopyData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CopyData</servlet-name>
+  	<url-pattern>/copydata</url-pattern>
+  </servlet-mapping>
+  	
+</web-app>
